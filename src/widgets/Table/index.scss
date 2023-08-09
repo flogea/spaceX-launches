@@ -1,0 +1,49 @@
+$header: #afcde7;
+$white: white;
+$bg: #d8e6f3;
+
+table {
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', Sans-Serif;
+  font-size: 14px;
+  border-collapse: collapse;
+  text-align: center;
+  box-shadow: 0 0 20px 10px $bg;
+
+  th,
+  td:first-child {
+    background: $header;
+    color: $white;
+    padding: 10px 20px;
+  }
+
+  th,
+  td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: $white;
+  }
+
+  td {
+    background: $bg;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  th:first-child,
+  td:first-child {
+    text-align: left;
+  }
+}
+
+.sort {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 20px;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', Sans-Serif;
+  margin: 20px 0;
+  color: $header;
+}
